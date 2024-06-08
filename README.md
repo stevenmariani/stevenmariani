@@ -4,6 +4,7 @@ If my background looks strange, it is. <br>
 
 ## 💻 Professional background:
 
+currently - Team Innovation Member at GroupM; <br>
 currently - Biddable Specialist at GroupM; <br>
 previous - Junior Biddable Specialist at GroupM; <br>
 previous - Digital Marketing Consultant; <br>
@@ -26,7 +27,7 @@ previous - Junior Researcher at Università degli Studi di Roma La Sapienza. <br
 
 ### Languages:
 
-- Python (Pandas, Numpy, Matplotlib, Seaborn, Plotly, Statsmodel, Scipy)
+- Python (Pandas, Numpy, Matplotlib, Seaborn, Plotly, Statsmodel, Scipy, Skitlearn)
 - SQL
 - SPSS
 
@@ -55,6 +56,11 @@ _Short time enrollments_
 
 ## ✈️ Visited countries:
 
+- Sintra (Portugal); <br> 
+- Lisboa (Portugal); <br>
+- Obidos (Portugal); <br>
+- Coimbra (Portugal); <br>
+- Porto (Portugal); <br>
 - Budapest (Hungary); <br>
 - Innsbruck (Austria); <br>
 - Dublin (Ireland); <br>
