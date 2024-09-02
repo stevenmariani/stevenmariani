@@ -6,7 +6,6 @@ If my background looks strange, it is. <br>
 
 currently - Team Innovation Member at GroupM; <br>
 currently - Biddable Specialist at GroupM; <br>
-previous - Junior Biddable Specialist at GroupM; <br>
 previous - Digital Marketing Consultant; <br>
 previous - Junior Researcher at Università degli Studi di Roma La Sapienza. <br>
 
