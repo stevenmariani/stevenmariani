@@ -4,7 +4,8 @@ If my background looks strange, it is. <br>
 
 ## 💻 Professional background:
 
-currently - Team Innovation Member at GroupM; <br>
+currently - Team Innovation Coordinator at GroupM; <br>
+previous - Team Innovation Member at GroupM; <br>
 currently - Biddable Specialist at GroupM; <br>
 previous - Digital Marketing Consultant; <br>
 previous - Junior Researcher at Università degli Studi di Roma La Sapienza. <br>
@@ -55,6 +56,12 @@ _Short time enrollments_
 
 ## ✈️ Visited countries:
 
+- Toulouse (France); <br>
+- Montpellier (France); <br>
+- Marseille (France); <br>
+- Pola (Croatia); <br>
+- Split (Croatia); <br>
+- Zadar (Croatia); <br>
 - Sintra (Portugal); <br> 
 - Lisboa (Portugal); <br>
 - Obidos (Portugal); <br>
