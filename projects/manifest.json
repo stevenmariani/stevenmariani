@@ -1,0 +1,14 @@
+{
+  "name": "Timeline Visualization",
+  "id": "timelineVisualization",
+  "logoUrl": "https://lookerstudio.google.com/gallery/static/data-studio.svg",
+  "organization": "Custom",
+  "data": {
+    "concepts": [
+      { "id": "date", "name": "Date", "type": "DIMENSION", "conceptType": "DIMENSION", "required": true },
+      { "id": "label", "name": "Label", "type": "DIMENSION", "conceptType": "DIMENSION", "required": true },
+      { "id": "category", "name": "Category", "type": "DIMENSION", "conceptType": "DIMENSION", "required": false },
+      { "id": "value", "name": "Value", "type": "METRIC", "conceptType": "METRIC", "required": false }
+    ]
+  }
+}
