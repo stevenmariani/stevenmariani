@@ -1,0 +1,12 @@
+{
+  "style": {
+    "fontFamily": {
+      "label": "Font Family",
+      "defaultValue": "Arial"
+    },
+    "timelineHeight": {
+      "label": "Timeline Height",
+      "defaultValue": "400px"
+    }
+  }
+}
