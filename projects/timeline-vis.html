@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://www.gstatic.com/lookerstudio/sdk/communityviz/v1/communityviz.js"></script>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    .timeline { overflow-x: auto; padding: 20px; }
+    .event { cursor: pointer; }
+    .event:hover { stroke: #000; stroke-width: 1px; }
+    .tooltip {
+      position: absolute;
+      pointer-events: none;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px;
+      border-radius: 4px;
+      font-size: 12px;
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<div id="timeline" class="timeline"></div>
+<div id="tooltip" class="tooltip"></div>
+
+<script>
+const dscc = window.dscc;
+
+function drawTimeline(data) {
+  const container = d3.select('#timeline');
+  container.selectAll('*').remove();
+
+  const width = container.node().getBoundingClientRect().width;
+  const height = 400;
+
+  const svg = container.append('svg')
+    .attr('width', width)
+    .attr('height', height);
+
+  const tooltip = d3.select('#tooltip');
+
+  const parseDate = d3.timeParse('%Y-%m-%d');
+
+  data.forEach(d => {
+    d.date = parseDate(d.date);
+  });
+
+  const xScale = d3.scaleTime()
+    .domain(d3.extent(data, d => d.date))
+    .range([50, width - 50]);
+
+  const categories = Array.from(new Set(data.map(d => d.category)));
+  const color = d3.scaleOrdinal(d3.schemeTableau10).domain(categories);
+
+  svg.append('g')
+    .attr('transform', `translate(0,${height - 30})`)
+    .call(d3.axisBottom(xScale));
+
+  svg.selectAll('circle')
+    .data(data)
+    .enter()
+    .append('circle')
+    .attr('class', 'event')
+    .attr('cx', d => xScale(d.date))
+    .attr('cy', height / 2)
+    .attr('r', 6)
+    .attr('fill', d => color(d.category))
+    .on('mouseover', (event, d) => {
+      tooltip.style('visibility', 'visible')
+        .html(`<strong>${d.label}</strong><br>${d3.timeFormat('%B %d, %Y')(d.date)}<br>${d.value || ''}`);
+    })
+    .on('mousemove', (event) => {
+      tooltip.style('top', (event.pageY + 10) + 'px').style('left', (event.pageX + 10) + 'px');
+    })
+    .on('mouseout', () => tooltip.style('visibility', 'hidden'));
+}
+
+// Data from Looker Studio
+dscc.subscribeToData(data => {
+  const rows = data.tables.DEFAULT.map(d => ({
+    date: d.date[0],
+    label: d.label[0],
+    category: d.category ? d.category[0] : 'Default',
+    value: d.value ? d.value[0] : null
+  }));
+
+  drawTimeline(rows);
+}, { transform: dscc.objectTransform });
+
+dscc.subscribeToResize(() => dscc.getData());
+</script>
+
+</body>
+</html>
