@@ -4,9 +4,9 @@ If my background looks strange, it is. <br>
 
 ## 💻 Professional background:
 
-currently - Team Innovation Coordinator at GroupM; <br>
-previous - Team Innovation Member at GroupM; <br>
-currently - Biddable Specialist at GroupM; <br>
+currently - Team Innovation Coordinator at WPP Media; <br>
+previous - Team Innovation Member at WPP Media; <br>
+currently - Biddable Specialist at WPP Media; <br>
 previous - Digital Marketing Consultant; <br>
 previous - Junior Researcher at Università degli Studi di Roma La Sapienza. <br>
 
@@ -28,6 +28,7 @@ previous - Junior Researcher at Università degli Studi di Roma La Sapienza. <br
 ### Languages:
 
 - Python (Pandas, Numpy, Matplotlib, Seaborn, Plotly, Statsmodel, Scipy, Skitlearn)
+- Java
 - SQL
 - SPSS
 
@@ -38,6 +39,7 @@ _Long time enrollments_
 - Bachelor's degree in Scienze Psicologiche Applicate at Università degli Studi dell'Aquila; <br>
 - Master's degree in Psicologia della Comunicazione e del Marketing at Università degli Studi di Roma La Sapienza; <br>
 - Postgraduate master's degree in Marketing, Comunicazione e Digital Strategy at 24Ore Business School <br>
+- (Currently enrolled) Bachelor's degree in Computer Science at Università degli Studi di Milano-Bicocca; <br>
 
 _Short time enrollments_
 
